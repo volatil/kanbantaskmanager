@@ -1,0 +1,11 @@
+.cantidad {
+	display: flex;
+}
+.cantidad > span {
+	--medidas: 15px;
+	background: var(--cyan);
+	height: var(--medidas);
+	width: var(--medidas);
+	display: block;
+	border-radius: 50%;
+}

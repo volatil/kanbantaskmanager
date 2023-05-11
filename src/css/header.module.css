@@ -1,0 +1,18 @@
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--gris);
+	width: 100%;
+	min-height: 60px;
+	gap: 40%;
+}
+.header .agregar {
+	background-color: var(--purple);
+	width: 40px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
