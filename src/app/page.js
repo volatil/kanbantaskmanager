@@ -1,7 +1,39 @@
-import Header from "../components/Header";
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import logo from "../../public/assets/svg/logo-light.svg";
+import header from "../css/header.module.css";
+import iconAdd from "../../public/assets/svg/icon-add-task-mobile.svg";
 
 import styles from "./page.module.css";
 import all from "../css/all.module.css";
+
+function Header() {
+	const [desplegado, setdesplegado] = useState();
+
+	return (
+		<header className={header.header}>
+			<Image
+				src={logo}
+				alt="Kanban"
+				height={24}
+				priority
+			/>
+			<div className={header.agregar}>
+				<Image
+					src={iconAdd}
+					alt="Agregar Task"
+				/>
+			</div>
+			{
+				desplegado
+					? (<p>si desplegado</p>)
+					: (<p>no desplegado</p>)
+			}
+		</header>
+	);
+}
 
 function Task({ task }) {
 	return (
