@@ -6,6 +6,7 @@
 	width: 100%;
 	min-height: 60px;
 	gap: 40%;
+	gap: 20%;
 }
 .header .agregar {
 	background-color: var(--purple);
@@ -15,4 +16,9 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+.header .agregar:hover {
+	background-color: var(--purpleHover);
 }

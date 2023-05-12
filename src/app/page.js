@@ -10,7 +10,12 @@ import styles from "./page.module.css";
 import all from "../css/all.module.css";
 
 function Header() {
-	const [desplegado, setdesplegado] = useState();
+	const [desplegado, setdesplegado] = useState(false);
+
+	const triggerModal = () => {
+		console.debug( "hola" );
+		setdesplegado((current) => !current);
+	};
 
 	return (
 		<header className={header.header}>
@@ -20,17 +25,17 @@ function Header() {
 				height={24}
 				priority
 			/>
-			<div className={header.agregar}>
-				<Image
-					src={iconAdd}
-					alt="Agregar Task"
-				/>
-			</div>
 			{
 				desplegado
 					? (<p>si desplegado</p>)
 					: (<p>no desplegado</p>)
 			}
+			<button type="button" className={header.agregar} onClick={() => triggerModal()}>
+				<Image
+					src={iconAdd}
+					alt="Agregar Task"
+				/>
+			</button>
 		</header>
 	);
 }
