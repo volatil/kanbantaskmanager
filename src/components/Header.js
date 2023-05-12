@@ -9,7 +9,6 @@ function Header() {
 			<Image
 				src={logo}
 				alt="Kanban"
-				// className={styles.vercelLogo}
 				height={24}
 				priority
 			/>

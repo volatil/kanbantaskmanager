@@ -1,11 +1,45 @@
 .cantidad {
 	display: flex;
+	padding: 20px 0;
+	width: 92%;
+	margin: 0 auto;
+	justify-content: flex-start;
+	gap: 10px;
+	align-items: center;
 }
 .cantidad > span {
-	--medidas: 15px;
+	--medidas: 20px;
 	background: var(--cyan);
 	height: var(--medidas);
 	width: var(--medidas);
 	display: block;
 	border-radius: 50%;
+}
+.cantidad > p {
+	font-size: .8em;
+	letter-spacing: 0.05em;
+	color: var(--secundario);
+}
+.cantidad > p > span {
+	margin-left: 4px;
+}
+.task {
+	background-color: var(--gris);
+	width: 92%;
+	margin: 0 auto 20px;
+	border-radius: 5px;
+	padding: 15px 10px;
+}
+.task:last-of-type {
+	margin-bottom: 60px;
+}
+.task > p::first-letter {
+	text-transform: capitalize;
+}
+.task > p {
+	font-family: var(--font);
+}
+.task > span {
+	font-size: .7em;
+	color: var(--secundario);
 }

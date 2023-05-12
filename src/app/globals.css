@@ -4,8 +4,11 @@
 	--gris:        #2c2c37;
 	--grisOscuro:  #21222d;
 	--purple:      #665fc1;
+	--secundario:  #6a6979;
 	
 	--cyan:        #4cbae6;
+	
+	--font:        'Plus Jakarta Sans', sans-serif !important;
 }
 
 * {
